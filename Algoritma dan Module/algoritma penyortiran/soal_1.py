@@ -19,10 +19,7 @@ def selection_sort_rekursif(data, sorted=[]):
         sorted.append(data[-(len(sorted)+1)])
         return selection_sort_rekursif(data, sorted)
 
-
-def main():
+if (__name__ == "__main__"):
     data = [35, 73, 90, 65, 23, 86, 43, 81, 34, 58]
     data_tersortir = selection_sort_rekursif(data)
     print(data_tersortir)
-
-main()
